@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>衣舉兩得</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./scss/all.css" />
+    <script
+      src="https://kit.fontawesome.com/d4852007ac.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="row">
+        <div class="col-4 text-white text-center pt-8 bg-darkGreen">
+          <h1 class="lh-lg mb-5">
+            更有價值、更環保<br />
+            處理<span class="fs-9 ps-1">二手衣物</span>
+          </h1>
+          <p class="hr ms-6 ps-7 text-skinColor">讓您一舉兩得</p>
+          <p class="ps-9 pt-5">
+            二手衣物回收買賣平台<i class="fa-solid fa-recycle"></i>
+          </p>
+          <a
+            href="#info"
+            class="btn btn-skinColor mt-7 text-darkGreen w-100 fw-bold"
+            ><i class="fa-solid fa-angles-down pe-1"></i>深入了解平台</a
+          >
+        </div>
+        <div class="col-8 bannerRight"></div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg fixed-top px-md-5">
+      <a class="navbar-brand fs-1 text-white" href="#"
+        >衣舉兩得<i class="fa-solid fa-shirt"></i
+      ></a>
+      <!-- RWD button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navDropdown"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- 導覽列上的超連結 -->
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navDropdown"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item ms-3">
+            <a class="nav-link text-white" href="./about.html">關於我們</a>
+          </li>
+          <!-- 下拉式選單 Dropdown -->
+          <li class="nav-item dropdown ms-3">
+            <a
+              class="nav-link dropdown-toggle text-white"
+              data-bs-toggle="dropdown"
+              href="./commodity.html"
+              >商品分類</a
+            >
+            <!-- 下拉式選單選項 Dropdown items -->
+            <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="./menswear.html"
+                  >男裝</a
+                >
+                <!-- 子選單Level 2 -->
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./menswear.html">上衣</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./menswear.html">襯衫</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./menswear.html">外套</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./menswear.html">褲子</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./menswear.html">背心</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./menswear.html">西裝</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  href="./womenswear.html"
+                  >女裝</a
+                >
+                <!-- 子選單Level 2 -->
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./womenswear.html">上衣</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./womenswear.html">襯衫</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./womenswear.html">外套</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./womenswear.html">褲子</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./womenswear.html">背心</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./womenswear.html">裙子</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./promotions.html"
+                  >限時特價商品</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link text-white" href="./login.html">登入/註冊</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link text-white" href="./cart.html"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="customizeBG" id="info">
+        <div class="row g-0 justify-content-center text-white pt-6">
+          <div class="col-md-2 bg-darkGreen box text-center pt-5">
+            <img src="./圖片/設計師首頁圖片/Vector.png" alt="問號圖" />
+            <p class="pt-5">不知道<br />如何處理二手衣物?</p>
+          </div>
+          <div class="col-md-2 bg-darkGreen mx-5 text-center pt-5">
+            <img src="./圖片/設計師首頁圖片/Vector-1.png" alt="錢符號圖" />
+            <p class="pt-5">二手衣物捨不得丟<br />又怕回收沒價值?</p>
+          </div>
+          <div class="col-md-2 bg-darkGreen text-center pt-5">
+            <img src="./圖片/設計師首頁圖片/Vector-2.png" alt="包包圖" />
+            <p class="pt-5">想去二手店估價寄賣<br />又怕價錢不滿意?</p>
+          </div>
+        </div>
+        <h2 class="text-center text-darkGreen pt-5 fw-bold">衣舉兩得</h2>
+        <p class="text-center pt-2 pb-4 mb-0">
+          幫您妥善處理二手衣物，讓二手衣物遇見下一個有緣人
+        </p>
+      </div>
+
+      <div class="container overflow-hidden text-center">
+        <h2 class="text-darkGreen fw-bold p-5 mb-0 hrService">提供的服務?</h2>
+        <div class="row gy-5 justify-content-center">
+          <div class="col-md-5 position-relative">
+            <div
+              class="d-flex justify-content-evenly pe-5 py-4 bg-darkGreen bg-opacity-50 rounded-pill"
+            >
+              <img
+                class="rounded-circle me-3"
+                height="220px"
+                src="./圖片/設計師首頁圖片/brooke-cagle--uHVRvDr7pg-unsplash 1-2.png"
+                alt="註冊會員圖片"
+              />
+              <p class="pt-5">
+                <span class="fs-2 fw-bold d-inline-block pb-4 text-darkGreen"
+                  >註冊會員</span
+                >
+                <br />
+                立刻獲得10點回饋點數
+              </p>
+            </div>
+            <p
+              class="position-absolute bottom-0 end-0 me-4 mb-0 p-3 bg-darkGreen rounded-circle text-skinColor fs-2"
+            >
+              01
+            </p>
+          </div>
+          <div class="col-md-5 position-relative">
+            <div
+              class="d-flex justify-content-evenly pe-5 py-4 bg-darkGreen bg-opacity-50 rounded-pill"
+            >
+              <img
+                class="rounded-circle me-3"
+                height="220px"
+                src="./圖片/設計師首頁圖片/brooke-cagle--uHVRvDr7pg-unsplash 1.png"
+                alt="二手衣物圖片"
+              />
+              <p class="pt-5">
+                <span class="fs-2 fw-bold d-inline-block pb-4 text-darkGreen"
+                  >預約回收</span
+                >
+                <br />
+                二手衣物換取回饋點數
+              </p>
+            </div>
+            <p
+              class="position-absolute bottom-0 end-0 me-4 mb-0 p-3 bg-darkGreen rounded-circle text-skinColor fs-2"
+            >
+              02
+            </p>
+          </div>
+          <div class="col-md-5 position-relative">
+            <div
+              class="d-flex justify-content-evenly pe-5 py-4 bg-darkGreen bg-opacity-50 rounded-pill"
+            >
+              <img
+                class="rounded-circle me-3"
+                height="220px"
+                src="./圖片/設計師首頁圖片/brooke-cagle--uHVRvDr7pg-unsplash 1-1.png"
+                alt="拍照圖片"
+              />
+              <p class="pt-5">
+                <span class="fs-2 fw-bold d-inline-block pb-4 text-darkGreen"
+                  >可拍照上傳</span
+                >
+                <br />
+                平台自訂價格自由買賣
+              </p>
+            </div>
+            <p
+              class="position-absolute bottom-0 end-0 me-4 mb-0 p-3 bg-darkGreen rounded-circle text-skinColor fs-2"
+            >
+              03
+            </p>
+          </div>
+          <div class="col-md-5 position-relative">
+            <div
+              class="d-flex justify-content-evenly pe-5 py-4 bg-darkGreen bg-opacity-50 rounded-pill"
+            >
+              <img
+                class="rounded-circle me-3"
+                height="220px"
+                src="./圖片/設計師首頁圖片/Frame 12.png"
+                alt="二手衣物圖片"
+              />
+              <p class="pt-5">
+                <span class="fs-2 fw-bold d-inline-block pb-4 text-darkGreen"
+                  >購買二手衣</span
+                >
+                <br />
+                可使用回饋點數折抵
+              </p>
+            </div>
+            <p
+              class="position-absolute bottom-0 end-0 me-4 mb-0 p-3 bg-darkGreen rounded-circle text-skinColor fs-2"
+            >
+              04
+            </p>
+          </div>
+        </div>
+        <a
+          class="btn btn-darkGreen btn-lg text-skinColor m-4"
+          href="./login.html#login"
+          >立刻註冊加入會員</a
+        >
+      </div>
+
+      <div class="customizeBG">
+        <div class="container overflow-hidden text-center pb-4">
+          <h2 class="text-darkGreen fw-bold p-5 mb-0 hrService">
+            限時特價商品
+          </h2>
+          <p
+            class="fs-4 border border-danger d-inline-block text-danger px-3 py-1 rounded-pill"
+          >
+            <i class="fa-regular fa-clock"></i>
+            倒數2天6時30分結束
+          </p>
+
+          <div class="swiper mySwiper px-5 pb-5 pt-4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="py-3 border-0 bg-white text-start">
+                  <i
+                    class="fa-solid fa-circle-user ps-3 pb-3 fs-5 text-darkGreen"
+                  ></i>
+                  <span>衣舉兩得</span>
+                  <img
+                    class="img-fluid"
+                    src="./圖片/設計師首頁圖片/Frame 17.png"
+                    alt="短袖上衣"
+                  />
+                  <div class="d-flex justify-content-between px-3 pt-3">
+                    <p class="fw-bold">短袖上衣</p>
+                    <p
+                      class="border border-darkGreen rounded-1 px-1 text-darkGreen"
+                    >
+                      狀況良好
+                    </p>
+                  </div>
+                  <p
+                    class="ps-3 m-0 fs-7 text-decoration-line-through text-black-50"
+                  >
+                    NT $300
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center px-3"
+                  >
+                    <p class="text-danger fw-bold m-0">NT $270</p>
+                    <button class="text-white btn btn-darkGreen px-3">
+                      加入購物車<i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="py-3 border-0 bg-white text-start">
+                  <i
+                    class="fa-solid fa-circle-user ps-3 pb-3 fs-5 text-darkGreen"
+                  ></i>
+                  <span>衣舉兩得</span>
+                  <img
+                    class="img-fluid"
+                    src="./圖片/設計師首頁圖片/Frame 17-1.png"
+                    alt="長袖上衣"
+                  />
+                  <div class="d-flex justify-content-between px-3 pt-3">
+                    <p class="fw-bold">長袖上衣</p>
+                    <p
+                      class="border border-darkGreen rounded-1 px-1 text-darkGreen"
+                    >
+                      狀況良好
+                    </p>
+                  </div>
+                  <p
+                    class="ps-3 m-0 fs-7 text-decoration-line-through text-black-50"
+                  >
+                    NT $350
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center px-3"
+                  >
+                    <p class="text-danger fw-bold m-0">NT $315</p>
+                    <button class="text-white btn btn-darkGreen px-3">
+                      加入購物車<i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="py-3 border-0 bg-white text-start">
+                  <i
+                    class="fa-solid fa-circle-user ps-3 pb-3 fs-5 text-darkGreen"
+                  ></i>
+                  <span>衣舉兩得</span>
+                  <img
+                    class="img-fluid"
+                    src="./圖片/設計師首頁圖片/Frame 17-2.png"
+                    alt="短袖襯衫"
+                  />
+                  <div class="d-flex justify-content-between px-3 pt-3">
+                    <p class="fw-bold">短袖襯衫</p>
+                    <p
+                      class="border border-darkGreen rounded-1 px-1 text-darkGreen"
+                    >
+                      有點瑕疵
+                    </p>
+                  </div>
+                  <p
+                    class="ps-3 m-0 fs-7 text-decoration-line-through text-black-50"
+                  >
+                    NT $320
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center px-3"
+                  >
+                    <p class="text-danger fw-bold m-0">NT $288</p>
+                    <button class="text-white btn btn-darkGreen px-3">
+                      加入購物車<i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-darkGreen">
+      <div class="container text-center py-5">
+        <p class="m-0 text-white letterSpacing">聯絡我們</p>
+        <a class="me-1" href="#"
+          ><i class="fa-brands fa-facebook text-skinColor"></i
+        ></a>
+        <a href="#">
+          <i class="fa-solid fa-envelope text-skinColor"></i>
+        </a>
+        <p class="m-0 text-white fs-7 pt-4">
+          Copyright©2022 衣舉兩得[二手衣物回收買賣平台]
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./bootstrap.bundle.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
