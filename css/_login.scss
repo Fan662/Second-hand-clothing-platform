@@ -1,0 +1,18 @@
+.loginBanner {
+  position: relative;
+  height: 360px;
+  text-shadow: 10px 10px 3px #000000;
+}
+.loginBanner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url(../圖片/商品分類/會員專區/nico-smit-QnkzvFCxKrA-unsplash.jpg);
+  background-position: center 22%;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.8;
+}
