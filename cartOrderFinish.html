@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>衣舉兩得</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./scss/all.css" />
+    <script
+      src="https://kit.fontawesome.com/d4852007ac.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="cartBanner">
+      <h2 class="text-center text-white fw-bold pt-4">購物車</h2>
+    </header>
+
+    <nav class="navbar navbar-expand-lg fixed-top px-md-5">
+      <a class="navbar-brand fs-1 text-white" href="./index.html">衣舉兩得</a>
+      <!-- RWD button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navDropdown"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- 導覽列上的超連結 -->
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navDropdown"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item ms-3">
+            <a class="nav-link text-white" href="./about.html">關於我們</a>
+          </li>
+          <!-- 下拉式選單 Dropdown -->
+          <li class="nav-item dropdown ms-3">
+            <a
+              class="nav-link dropdown-toggle text-white"
+              data-bs-toggle="dropdown"
+              href="./commodity.html"
+              >商品分類</a
+            >
+            <!-- 下拉式選單選項 Dropdown items -->
+            <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item" href="./menswear.html">男裝</a>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item" href="./womenswear.html">女裝</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./promotions.html"
+                  >限時特價商品</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link text-white" href="./login.html">登入/註冊</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link text-white" href="./cart.html"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container">
+      <div
+        class="row justify-content-center text-center text-skinColor py-5"
+        id="cartStep"
+      >
+        <div class="col">
+          <div class="bg-darkGreen py-3">Step 1. 購物車清單</div>
+        </div>
+        <div class="col mx-5">
+          <div class="bg-darkGreen py-3">Step 2. 訂單確認</div>
+        </div>
+        <div class="col">
+          <div class="bg-darkGreen py-3">Step 3. 完成訂購</div>
+        </div>
+      </div>
+
+      <ul
+        class="list-unstyled text-center bg-darkGreen bg-opacity-50 py-5 mx-9 mt-5 mb-7 shadow"
+      >
+        <li>
+          <h2 class="text-light">
+            <i class="fa-regular fa-circle-check"></i>完成訂購
+          </h2>
+        </li>
+        <li class="my-5">已收到您的訂單，謝謝您使用衣舉兩得平台!</li>
+        <li>
+          <a href="./promotions.html" class="btn btn-darkGreen btn-lg"
+            >繼續購物</a
+          >
+        </li>
+      </ul>
+    </main>
+
+    <footer class="bg-darkGreen">
+      <div class="container text-center py-5">
+        <p class="m-0 text-white letterSpacing">聯絡我們</p>
+        <a class="me-1" href="#"
+          ><i class="fa-brands fa-facebook text-skinColor"></i
+        ></a>
+        <a href="#">
+          <i class="fa-solid fa-envelope text-skinColor"></i>
+        </a>
+        <p class="m-0 text-white fs-7 pt-4">
+          Copyright©2022 衣舉兩得[二手衣物回收買賣平台]
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./bootstrap.bundle.js"></script>
+  </body>
+</html>

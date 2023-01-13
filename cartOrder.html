@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>衣舉兩得</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./scss/all.css" />
+    <script
+      src="https://kit.fontawesome.com/d4852007ac.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="cartBanner">
+      <h2 class="text-center text-white fw-bold pt-4">購物車</h2>
+    </header>
+
+    <nav class="navbar navbar-expand-lg fixed-top px-md-5">
+      <a class="navbar-brand fs-1 text-white" href="./index.html">衣舉兩得</a>
+      <!-- RWD button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navDropdown"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- 導覽列上的超連結 -->
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navDropdown"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item ms-3">
+            <a class="nav-link text-white" href="./about.html">關於我們</a>
+          </li>
+          <!-- 下拉式選單 Dropdown -->
+          <li class="nav-item dropdown ms-3">
+            <a
+              class="nav-link dropdown-toggle text-white"
+              data-bs-toggle="dropdown"
+              href="./commodity.html"
+              >商品分類</a
+            >
+            <!-- 下拉式選單選項 Dropdown items -->
+            <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item" href="./menswear.html">男裝</a>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item" href="./womenswear.html">女裝</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./promotions.html"
+                  >限時特價商品</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link text-white" href="./login.html">登入/註冊</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link text-white" href="./cart.html"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container">
+      <div
+        class="row justify-content-center text-center text-skinColor py-5"
+        id="cartStep"
+      >
+        <div class="col">
+          <div class="bg-darkGreen py-3">Step 1. 購物車清單</div>
+        </div>
+        <div class="col mx-5">
+          <div class="bg-darkGreen py-3">Step 2. 訂單確認</div>
+        </div>
+        <div class="col">
+          <div class="bg-darkGreen py-3">Step 3. 完成訂購</div>
+        </div>
+      </div>
+
+      <div class="checkList"></div>
+
+      <ul
+        class="row align-items-center list-unstyled g-0 bg-secondary bg-opacity-25 mb-5 p-3 text-center"
+      >
+        <li class="col-md-3 fw-bold">寄送方式</li>
+        <li class="col-md-3">
+          <input
+            class="form-check-input p-2 me-2"
+            type="checkbox"
+            value=""
+            id="invalidCheck2"
+            required
+          />7-ELEVEN NT$60
+        </li>
+        <li class="col-md-3">
+          <input
+            class="form-check-input p-2 me-2"
+            type="checkbox"
+            value=""
+            id="invalidCheck2"
+            required
+          />全家 NT$60
+        </li>
+        <li class="col-md-3">
+          <input
+            class="form-check-input p-2 me-2"
+            type="checkbox"
+            value=""
+            id="invalidCheck2"
+            required
+          />萊爾富 NT$60
+        </li>
+      </ul>
+
+      <ul
+        class="row align-items-center list-unstyled g-0 bg-secondary bg-opacity-25 mb-5 p-3 text-center"
+      >
+        <li class="col-md-3 fw-bold">我的點數</li>
+        <li class="col-md-3">
+          <i class="fa-brands fa-product-hunt me-2"></i>100點
+        </li>
+        <li class="col-md-3">
+          <input
+            class="form-check-input p-2 me-2"
+            type="checkbox"
+            value=""
+            id="invalidCheck2"
+            required
+          />使用點數折抵
+        </li>
+      </ul>
+
+      <ul
+        class="row align-items-center list-unstyled g-0 bg-secondary bg-opacity-25 mb-5 p-3 text-center"
+      >
+        <li class="col-md-3 fw-bold">付款方式</li>
+        <li class="col-md-3">
+          <input
+            class="form-check-input p-2 me-2"
+            type="checkbox"
+            value=""
+            id="invalidCheck2"
+            required
+          />貨到付款
+        </li>
+        <li class="col-md-3">
+          <input
+            class="form-check-input p-2 me-2"
+            type="checkbox"
+            value=""
+            id="invalidCheck2"
+            required
+          />信用卡
+        </li>
+        <li class="col-md-3">
+          <label for="cardNumber" class="form-label">卡號</label>
+          <input
+            class="form-control mb-2"
+            type="text"
+            value="0000-1234-5678-9999"
+            id="cardNumber"
+            required
+          />
+          <ul class="list-unstyled row mb-2">
+            <li class="col">
+              有效月份
+              <select
+                class="form-select text-center"
+                aria-label="Default select example"
+              >
+                <option selected>請選擇</option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+            </li>
+            /
+            <li class="col">
+              有效年份
+              <select
+                class="form-select text-center"
+                aria-label="Default select example"
+              >
+                <option selected>請選擇</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+              </select>
+            </li>
+          </ul>
+
+          <label for="safeNumber" class="form-label">安全碼(三碼)</label>
+          <input
+            type="text"
+            class="form-control m-0 mb-2"
+            id="safeNumber"
+            value="012"
+            required
+          />
+        </li>
+      </ul>
+
+      <h3>訂單明細</h3>
+      <table class="mb-5 border border-dark w-100">
+        <thead>
+          <tr>
+            <th width="40%">商品名稱</th>
+            <th width="30%">數量</th>
+            <th width="30%">單價</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+          <tr class="">
+            <td>運費金額</td>
+            <td></td>
+            <td>NT$60</td>
+          </tr>
+          <tr class="border-bottom border-dark">
+            <td>使用點數折抵</td>
+            <td></td>
+            <td class="text-danger">NT$100(折抵)</td>
+          </tr>
+          <tr class="border-bottom border-dark">
+            <td><h4>總付款金額</h4></td>
+            <td></td>
+            <td class="totalPrice">
+              <!-- <h4>NT$563</h4> -->
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <a
+        class="btn btn-darkGreen fs-3 fw-bold w-100 mb-5 text-skinColor confirmBtn"
+        href="./cartOrderFinish.html#cartStep"
+        role="button"
+        ><i class="fa-solid fa-dollar-sign"></i>確定付款</a
+      >
+    </main>
+
+    <footer class="bg-darkGreen">
+      <div class="container text-center py-5">
+        <p class="m-0 text-white letterSpacing">聯絡我們</p>
+        <a class="me-1" href="#"
+          ><i class="fa-brands fa-facebook text-skinColor"></i
+        ></a>
+        <a href="#">
+          <i class="fa-solid fa-envelope text-skinColor"></i>
+        </a>
+        <p class="m-0 text-white fs-7 pt-4">
+          Copyright©2022 衣舉兩得[二手衣物回收買賣平台]
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="./js/cartOrder.js"></script>
+  </body>
+</html>

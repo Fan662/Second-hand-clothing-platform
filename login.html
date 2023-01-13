@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>衣舉兩得</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./scss/all.css" />
+    <script
+      src="https://kit.fontawesome.com/d4852007ac.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="loginBanner">
+      <h2 class="text-center text-white fw-bold pt-4">會員專區</h2>
+    </header>
+    <nav class="navbar navbar-expand-lg fixed-top px-md-5">
+      <a class="navbar-brand fs-1 text-white" href="./index.html"
+        >衣舉兩得<i class="fa-solid fa-shirt"></i
+      ></a>
+      <!-- RWD button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navDropdown"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- 導覽列上的超連結 -->
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navDropdown"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item ms-3">
+            <a class="nav-link text-white" href="./about.html">關於我們</a>
+          </li>
+          <!-- 下拉式選單 Dropdown -->
+          <li class="nav-item dropdown ms-3">
+            <a
+              class="nav-link dropdown-toggle text-white"
+              data-bs-toggle="dropdown"
+              href="./commodity.html"
+              >商品分類</a
+            >
+            <!-- 下拉式選單選項 Dropdown items -->
+            <ul class="dropdown-menu">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item" href="./menswear.html">男裝</a>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item" href="./womenswear.html">女裝</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./promotions.html"
+                  >限時特價商品</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link text-white" href="#">登入/註冊</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link text-white" href="./cart.html"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container py-5" id="login">
+      <div class="row justify-content-center">
+        <form class="col-md-4 bg-darkGreen bg-opacity-25 p-5 shadow">
+          <h3 class="pb-4 text-center fw-bold">登入</h3>
+          <div class="mb-2">
+            <label for="loginEmail" class="form-label">電子信箱</label>
+            <input
+              type="email"
+              class="form-control m-0"
+              id="loginEmail"
+              required
+            />
+          </div>
+          <div class="mb-2">
+            <label for="loginPassword" class="form-label">密碼</label>
+            <input
+              type="password"
+              class="form-control m-0"
+              id="loginPassword"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-darkGreen w-100 mt-3">
+            登入
+          </button>
+          <button type="button" class="btn btn-danger w-100 mt-4">
+            忘記密碼
+          </button>
+        </form>
+
+        <form class="col-md-4 bg-darkGreen bg-opacity-50 p-5 shadow">
+          <h3 class="pb-4 text-center fw-bold">註冊</h3>
+          <div class="mb-2">
+            <label for="registerName" class="form-label">使用者名稱</label>
+            <input
+              type="text"
+              class="form-control m-0"
+              id="registerName"
+              required
+            />
+          </div>
+          <div class="mb-2">
+            <label for="registerEmail" class="form-label">電子信箱</label>
+            <input
+              type="email"
+              class="form-control m-0"
+              id="registerEmail"
+              aria-describedby="emailHelp"
+              required
+            />
+          </div>
+          <div class="mb-2">
+            <label for="registerPassword" class="form-label">密碼</label>
+            <input
+              type="password"
+              class="form-control m-0"
+              id="registerPassword"
+              required
+            />
+          </div>
+          <div class="mb-2">
+            <label for="checkPassword" class="form-label">確認密碼</label>
+            <input
+              type="password"
+              class="form-control m-0"
+              id="checkPassword"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-darkGreen w-100 mt-3">
+            註冊
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="bg-darkGreen">
+      <div class="container text-center py-5">
+        <p class="m-0 text-white letterSpacing">聯絡我們</p>
+        <a class="me-1" href="#"
+          ><i class="fa-brands fa-facebook text-skinColor"></i
+        ></a>
+        <a href="#">
+          <i class="fa-solid fa-envelope text-skinColor"></i>
+        </a>
+        <p class="m-0 text-white fs-7 pt-4">
+          Copyright©2022 衣舉兩得[二手衣物回收買賣平台]
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./bootstrap.bundle.js"></script>
+  </body>
+</html>
