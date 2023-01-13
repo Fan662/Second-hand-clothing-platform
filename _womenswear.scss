@@ -1,0 +1,49 @@
+.womenswearBanner {
+  position: relative;
+  height: 360px;
+  text-shadow: 10px 10px 3px #000000;
+}
+.womenswearBanner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url(../圖片/商品分類/女裝/tamara-bellis-68csPWTnafo-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.hrWomenswear {
+  position: relative;
+}
+.hrWomenswear::before {
+  content: "";
+  background-color: #445a49;
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  width: 17%;
+  height: 2px;
+}
+.hrWomenswear::after {
+  content: "";
+  background-color: #445a49;
+  position: absolute;
+  top: 50%;
+  right: 28%;
+  width: 17%;
+  height: 2px;
+}
+
+.sticky-top {
+  top: 80px;
+}
+
+.womenswearList img {
+  width: 330px;
+  height: 360px;
+}

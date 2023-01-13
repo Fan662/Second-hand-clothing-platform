@@ -1,0 +1,36 @@
+@import "./Bootstrap\ scss/Bootstrap";
+@import "./index";
+@import "./about";
+@import "./commodity";
+@import "./menswear";
+@import "./womenswear";
+@import "./Promotions";
+@import "./login";
+@import "./cart";
+
+// navbar選單設定(開始處)
+// 設定navbar商品分類滑鼠滑過自動展開裡面下拉式選單項目
+.navbar-nav li:hover > ul.dropdown-menu {
+  display: block;
+}
+// 設定navbar商品分類需點擊才會展開，但裡面男裝、女裝只需滑鼠滑過就會自動展開裡面下拉式選單項目
+// li.dropdown-submenu:hover > ul.dropdown-menu {
+//   display: block;
+// }
+// 設定子選單位置
+// .dropdown-submenu {
+//   position: relative;
+// }
+// .dropdown-submenu > .dropdown-menu {
+//   top: 0;
+//   left: 100%;
+// }
+// 設定選單箭頭向右旋轉
+// .dropdown-menu > li > a:hover:after {
+//   transform: rotate(-90deg);
+// }
+// 選單寬度設定
+.dropdown-menu {
+  min-width: 130px;
+}
+// navbar選單設定(結束)
