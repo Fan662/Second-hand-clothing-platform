@@ -1,7 +1,7 @@
 # Second-hand-clothing-platform
 ## 二手衣物回收買賣平台 [GitHub Pages](https://fan662.github.io/Second-hand-clothing-platform/)
 
-- 登入/註冊功能未開發完
+- 登入/註冊、會員功能未開發完
 
 - RWD功能未開發完
 
