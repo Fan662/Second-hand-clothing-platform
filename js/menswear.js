@@ -82,21 +82,6 @@ menswearCategoryList.addEventListener("click", function (e) {
   renderProductList(filter);
 });
 
-// womenswearCategoryList.addEventListener("click", function (e) {
-//   let filter = [];
-//   productData.forEach(function (item) {
-//     if (e.target.getAttribute("data-category") == item.category) {
-//       filter.push(item);
-//     } else if (
-//       e.target.getAttribute("data-category") == null ||
-//       e.target.getAttribute("data-category") == undefined
-//     ) {
-//       return;
-//     }
-//   });
-//   renderProductList(filter);
-// });
-
 // 加入購物車
 function addCartItem(id) {
   axios
