@@ -8,7 +8,7 @@ let cartData = [];
 // 取得購物車列表
 function getCartList() {
   axios
-    .get(`http://localhost:3000/carts?_expand=product`)
+    .get(`https://vercel-blue-alpha.vercel.app/carts?_expand=product`)
     .then(function (response) {
       cartData = response.data;
       renderCartList();
@@ -86,7 +86,7 @@ function renderCartList() {
 // 刪除購物車內特定產品
 function deleteCartItem(cartId) {
   axios
-    .delete(`http://localhost:3000/carts/${cartId}`)
+    .delete(`https://vercel-blue-alpha.vercel.app/carts/${cartId}`)
     .then(function (response) {
       alert("成功刪除單筆購物車物品！");
       getCartList();
@@ -106,7 +106,7 @@ cartList.addEventListener("click", function (e) {
 // 加入訂單確認
 function checkCartItem() {
   axios
-    .post(`http://localhost:3000/checks`, {
+    .post(`https://vercel-blue-alpha.vercel.app/checks`, {
       checkAry,
     })
     .then(function (response) {

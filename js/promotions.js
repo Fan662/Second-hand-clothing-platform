@@ -27,10 +27,12 @@ setInterval(function () {
 let productData = [];
 // 特價商品資料取得
 function getProductList() {
-  axios.get(`http://localhost:3000/products`).then(function (response) {
-    productData = response.data;
-    renderProductList();
-  });
+  axios
+    .get(`https://vercel-blue-alpha.vercel.app/products`)
+    .then(function (response) {
+      productData = response.data;
+      renderProductList();
+    });
 }
 const promotionsList = document.querySelector(".promotionsList");
 // 特價商品資料渲染
@@ -84,7 +86,7 @@ function renderProductList() {
 // 加入購物車
 function addCartItem(id) {
   axios
-    .post(`http://localhost:3000/carts`, {
+    .post(`https://vercel-blue-alpha.vercel.app/carts`, {
       productId: id,
     })
     .then(function (response) {

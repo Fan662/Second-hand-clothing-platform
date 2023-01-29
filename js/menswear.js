@@ -8,7 +8,7 @@ let productData = [];
 // 男裝商品資料取得
 function getProductList() {
   axios
-    .get(`http://localhost:3000/products?gender=男`)
+    .get(`https://vercel-blue-alpha.vercel.app/products?gender=男`)
     .then(function (response) {
       productData = response.data;
       renderProductList(productData);
@@ -85,7 +85,7 @@ menswearCategoryList.addEventListener("click", function (e) {
 // 加入購物車
 function addCartItem(id) {
   axios
-    .post(`http://localhost:3000/carts`, {
+    .post(`https://vercel-blue-alpha.vercel.app/carts`, {
       productId: id,
     })
     .then(function (response) {

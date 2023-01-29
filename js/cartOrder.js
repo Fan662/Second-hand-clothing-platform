@@ -7,10 +7,12 @@ init();
 let checkData = [];
 // 取得購物車列表
 function getCheckList() {
-  axios.get(`http://localhost:3000/checks`).then(function (response) {
-    checkData = response.data;
-    renderCheckList();
-  });
+  axios
+    .get(`https://vercel-blue-alpha.vercel.app/checks`)
+    .then(function (response) {
+      checkData = response.data;
+      renderCheckList();
+    });
 }
 
 const checkList = document.querySelector(".checkList");
@@ -110,7 +112,7 @@ function renderCheckList() {
 // 清除確認訂單內全部產品
 function deleteAllCheckList(cartId) {
   axios
-    .delete(`http://localhost:3000/checks/${cartId}`)
+    .delete(`https://vercel-blue-alpha.vercel.app/checks/${cartId}`)
     .then(function (response) {
       //   alert(response.data);
       getCheckList();
@@ -123,7 +125,7 @@ function deleteAllCheckList(cartId) {
 // 清除購物車內相對應產品
 function deleteCartList(cartId) {
   axios
-    .delete(`http://localhost:3000/carts/${cartId}`)
+    .delete(`https://vercel-blue-alpha.vercel.app/carts/${cartId}`)
     .then(function (response) {
       //   alert(response.data);
     })
@@ -135,7 +137,7 @@ function deleteCartList(cartId) {
 // 刪除確認訂單內特定產品
 function deleteCheckItem(cartId) {
   axios
-    .delete(`http://localhost:3000/checks/${cartId}`)
+    .delete(`https://vercel-blue-alpha.vercel.app/checks/${cartId}`)
     .then(function (response) {
       alert("成功刪除單筆購物車物品！");
       getCheckList();
@@ -155,7 +157,7 @@ checkList.addEventListener("click", function (e) {
 // 送出訂單給後台
 function checkCartItem(checkData) {
   axios
-    .post(`http://localhost:3000/orders`, {
+    .post(`https://vercel-blue-alpha.vercel.app/orders`, {
       orderList: checkData,
       createTime: new Date().getTime(),
     })
