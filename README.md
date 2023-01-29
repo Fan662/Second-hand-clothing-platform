@@ -14,4 +14,4 @@
 | 設計 | 使用 Whimsical製作網站地圖及線搞圖 |
 | 切版 | 使用 HTML、CSS / SCSS、Bootstrap 5 |
 | 前端 | 使用 JavaScript 進行開發並用 Axios 串接 API |
-| 後端 | 使用 JSON Server 建立資料庫及模擬 API |
+| 後端 | 使用 JSON Server 建立資料庫及模擬 API 並部屬到Vercel |
