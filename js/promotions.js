@@ -9,8 +9,8 @@ const clock = document.querySelector(".clock");
 setInterval(function () {
   let time = new Date();
   let nowTime = time.getTime();
-  time.setMonth(0);
-  time.setDate(21);
+  time.setMonth(11);
+  time.setDate(18);
   time.setHours(0);
   time.setMinutes(0);
   time.setSeconds(0);
